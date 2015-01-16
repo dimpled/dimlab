@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 DIMLAB
 ================================
@@ -43,3 +44,7 @@ return [
     'charset' => 'utf8',
 ];
 ```
+=======
+# dimlab
+laboratory systems
+>>>>>>> b1ab4b2232521942e2f73fd495914b9a046bc329
