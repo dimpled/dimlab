@@ -26,7 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => 'DIMLAB',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -36,12 +36,15 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => 'About', 'url' => ['/site/about']],
-                    ['label' => 'Contact', 'url' => ['/site/contact']],
+                    //['label' => 'About', 'url' => ['/site/about']],
+                    //['label' => 'Contact', 'url' => ['/site/contact']],
+                    ['label' => 'Register', 'url' => ['/register'], 'visible'=>Yii::$app->user->isGuest],
+                    ['label' => 'Profile', 'url' => ['/user/settings/profile'], 'visible'=>!Yii::$app->user->isGuest],
+                    ['label' => 'Setting', 'url' => ['/user/settings/account'], 'visible'=>!Yii::$app->user->isGuest],
                     Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/site/login']] :
+                        ['label' => 'Login', 'url' => ['/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
+                            'url' => ['/logout'],
                             'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);

@@ -41,6 +41,11 @@ $config = [
           'class' => 'yii\web\UrlManager',
           'enablePrettyUrl' => true,
           'showScriptName' => false,
+          'rules' => [
+            'register'=>'/user/registration/register',
+            'login' => '/user/security/login',
+            'logout' => '/user/security/logout',
+          ],
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
