@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Yii 2 Basic Application Template
 ================================
 
@@ -89,6 +89,3 @@ return [
 
 Also check and edit the other files in the `config/` directory to customize your application.
 =======
-# dimlab
-laboratory systems
->>>>>>> 91a24e6d0b7f480d491dd81843cefeb291d64ab1
