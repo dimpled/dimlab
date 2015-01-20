@@ -14,15 +14,22 @@ $config = [
         'cost' => 12,
         'admins' => ['admin'],
         'mailer' => [
-          'sender'                => 'no-reply@dimlab.com', // or ['no-reply@myhost.com' => 'Sender name']
-          'welcomeSubject'        => 'Welcome to DIMLAB',
-          'confirmationSubject'   => 'Confirmation subject',
-          'reconfirmationSubject' => 'Email change subject',
-          'recoverySubject'       => 'Recovery subject',
+          'sender' => ['no-reply@dimlab.com'=>'DIMLAB'], // or ['no-reply@myhost.com' => 'Sender name']
+          // 'welcomeSubject'        => 'Welcome to DIMLAB',
+          // 'confirmationSubject'   => 'Confirmation subject',
+          // 'reconfirmationSubject' => 'Email change subject',
+          // 'recoverySubject'       => 'Recovery subject',
         ],
       ],
     ],
     'components' => [
+      'view' => [
+        'theme' => [
+          'pathMap' => [
+            '@dektrium/user/views' => '@app/views/user'
+          ],
+        ],
+      ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'ixMFKxpAqJ4eoeHyXyXNpbanU08548Bu',
@@ -30,10 +37,10 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'user' => [
-            'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
-        ],
+        // 'user' => [
+        //     'identityClass' => 'app\models\User',
+        //     'enableAutoLogin' => true,
+        // ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
