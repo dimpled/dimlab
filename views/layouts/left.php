@@ -36,7 +36,7 @@ $user = Yii::$app->user->identity;
                 'encodeLabels' => false,
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
-                    ['label' => '<span class="fa fa-dashboard"></span> Dashboard', 'url' => ['/']],
+                    ['label' => '<span class="fa fa-dashboard"></span> Dashboard', 'url' => ['/site/index']],
 
                     ['label' => 'Register', 'url' => ['/register'], 'visible'=>Yii::$app->user->isGuest],
                     ['label' => 'Profile', 'url' => ['/user/settings/profile'], 'visible'=>!Yii::$app->user->isGuest],

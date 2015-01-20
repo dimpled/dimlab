@@ -24,7 +24,7 @@ if (Yii::$app->controller->action->id === 'login') {
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="skin-blue">
+    <body class="skin-black">
     <?php $this->beginBody() ?>
 
     <?= $this->render(
