@@ -66,6 +66,15 @@ return array (
       '@yii/authclient' => $vendorDir . '/yiisoft/yii2-authclient',
     ),
   ),
+  'yiisoft/yii2-imagine' => 
+  array (
+    'name' => 'yiisoft/yii2-imagine',
+    'version' => '2.0.2.0',
+    'alias' => 
+    array (
+      '@yii/imagine' => $vendorDir . '/yiisoft/yii2-imagine',
+    ),
+  ),
   'dektrium/yii2-user' => 
   array (
     'name' => 'dektrium/yii2-user',
