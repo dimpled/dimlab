@@ -12,7 +12,6 @@ AppAsset::register($this);
 ?>
 
 <header class="header">
-
 <?= Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
 <nav class="navbar navbar-static-top" role="navigation">
@@ -34,7 +33,7 @@ AppAsset::register($this);
 if (Yii::$app->user->isGuest) {
     ?>
     <li class="footer">
-        <?= Html::a('Login', ['/site/login']) ?>
+        <?= Html::a('Login', ['/login']) ?>
     </li>
 <?php
 } else {
@@ -69,12 +68,12 @@ if (Yii::$app->user->isGuest) {
             <!-- Menu Footer-->
             <li class="user-footer">
                 <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    <a href="/user/settings/profile" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
                     <?= Html::a(
                             'Sign out',
-                            ['/site/logout'],
+                            ['/logout'],
                             ['data-method' => 'post','class'=>'btn btn-default btn-flat']
                         ) ?>
                 </div>
