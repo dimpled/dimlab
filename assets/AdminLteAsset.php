@@ -18,7 +18,7 @@ class AdminLteAsset extends AssetBundle
   public $sourcePath = '@bower/';
   public $css = [ 'font-awesome/css/font-awesome.min.css'];
   public $js = [
-    
+
   ];
   public $depends = [
     'yii\web\YiiAsset',
