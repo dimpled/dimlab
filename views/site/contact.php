@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+        Dimpled.Me
     </p>
 
     <div class="row">
