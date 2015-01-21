@@ -3,8 +3,8 @@ DIMLAB
 ================================
 
 Laboratory System
-[logo]: http://www.dimpled.me/downloads/dimlab.png "dimlab"
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![alt text]( http://www.dimpled.me/downloads/dimlab.png "Logo Title Text 1")
 
 REQUIREMENTS
 ------------
