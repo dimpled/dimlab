@@ -3,7 +3,7 @@ DIMLAB
 ================================
 
 Laboratory System
-
+[logo]: http://www.dimpled.me/downloads/dimlab.png "dimlab"
 
 REQUIREMENTS
 ------------
@@ -14,7 +14,7 @@ The minimum requirement by this application template that your Web server suppor
 INSTALLATION
 ------------
 
-[logo]: http://www.dimpled.me/downloads/dimlab.png "dimlab"
+
 
 
 
