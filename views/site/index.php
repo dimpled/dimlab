@@ -11,7 +11,7 @@ $this->title = 'My Yii Application';
           150
         </h3>
         <p>
-          New Orders
+          New Orders BOTH
         </p>
       </div>
       <div class="icon">
