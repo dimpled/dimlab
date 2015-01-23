@@ -43,24 +43,30 @@ $this->params['breadcrumbs'][] = $this->title;
                     'validateOnChange'       => false,
                 ]) ?>
 
-                <?= $form->field($model, 'login', ['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control', 'tabindex' => '1','placeholder'=>'Username']]) ?>
+                <?= $form->field($model, 'login', ['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control input-lg', 'tabindex' => '1','placeholder'=>'Username']])->label(FALSE) ?>
 
-                <?= $form->field($model, 'password', ['inputOptions' => ['class' => 'form-control', 'tabindex' => '2','placeholder'=>'Password']])->passwordInput()->label(Yii::t('user', 'Password') . ' (' . Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) . ')') ?>
+                <?php //$form->field($model, 'password', ['inputOptions' => ['class' => 'form-control input-lg', 'tabindex' => '2','placeholder'=>'Password']])->passwordInput()->label(Yii::t('user', 'Password') . ' (' . Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) . ')') ?>
+                <?= $form->field($model, 'password', ['inputOptions' => ['class' => 'form-control input-lg', 'tabindex' => '2','placeholder'=>'Password']])->passwordInput()->label(FALSE) ?>
 
                 <?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-success btn-block', 'tabindex' => '3']) ?>
+                <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-success btn-block btn-lg', 'tabindex' => '3']) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>
         </div>
         <?php if ($module->enableConfirmation): ?>
             <p class="text-center">
-                <?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>
+                <?= Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']); ?>
+                <?php // Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>
             </p>
         <?php endif ?>
+            
         <?= Connect::widget([
             'baseAuthUrl' => ['/user/security/auth']
         ]) ?>
+            
         </div>  </div>
 </div>
+
+

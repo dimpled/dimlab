@@ -1,90 +1,42 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$this->title = 'Dashboard : DIMLAB';
 ?>
-<div class="row">
-  <div class="col-lg-3 col-xs-6">
-    <!-- small box -->
-    <div class="small-box bg-aqua">
-      <div class="inner">
-        <h3>
-          150
-        </h3>
-        <p>
-          New Orders BOTH
-        </p>
-      </div>
-      <div class="icon">
-        <i class="ion ion-bag"></i>
-      </div>
-      <a href="#" class="small-box-footer">
-        More info <i class="fa fa-arrow-circle-right"></i>
-      </a>
-    </div>
-  </div><!-- ./col -->
-  <div class="col-lg-3 col-xs-6">
-    <!-- small box -->
-    <div class="small-box bg-green">
-      <div class="inner">
-        <h3>
-          53<sup style="font-size: 20px">%</sup>
-        </h3>
-        <p>
-          Bounce Rate
-        </p>
-      </div>
-      <div class="icon">
-        <i class="ion ion-stats-bars"></i>
-      </div>
-      <a href="#" class="small-box-footer">
-        More info <i class="fa fa-arrow-circle-right"></i>
-      </a>
-    </div>
-  </div><!-- ./col -->
-  <div class="col-lg-3 col-xs-6">
-    <!-- small box -->
-    <div class="small-box bg-yellow">
-      <div class="inner">
-        <h3>
-          44
-        </h3>
-        <p>
-          User Registrations
-        </p>
-      </div>
-      <div class="icon">
-        <i class="ion ion-person-add"></i>
-      </div>
-      <a href="#" class="small-box-footer">
-        More info <i class="fa fa-arrow-circle-right"></i>
-      </a>
-    </div>
-  </div><!-- ./col -->
-  <div class="col-lg-3 col-xs-6">
-    <!-- small box -->
-    <div class="small-box bg-red">
-      <div class="inner">
-        <h3>
-          65
-        </h3>
-        <p>
-          Unique Visitors
-        </p>
-      </div>
-      <div class="icon">
-        <i class="ion ion-pie-graph"></i>
-      </div>
-      <a href="#" class="small-box-footer">
-        More info <i class="fa fa-arrow-circle-right"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
 
 <div class="row">
   <!-- Left col -->
   <section class="col-lg-7 connectedSortable ui-sortable">
+
+  <!-- solid sales graph -->
+  <div class="box box-solid bg-teal-gradient">
+    <div class="box-header ui-sortable-handle" style="cursor: move;">
+      <i class="fa fa-th"></i>
+      <h3 class="box-title">Sales Graph</h3>
+      <div class="box-tools pull-right">
+        <button class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
+        <button class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+      </div>
+    </div>
+    <div class="box-body border-radius-none">
+      <div class="chart" id="line-chart" style="height: 250px;"><svg height="250" version="1.1" width="378" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.65625px; top: -0.59375px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="43.5625" y="211.359375" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.46875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,211.359375H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="164.76953125" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.47265625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,164.76953125H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="118.17968749999999" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.460937499999986" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,118.17968749999999H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="71.58984375" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.46484375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,71.58984375H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="24.99999999999997" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.4687499999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,24.99999999999997H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="298.51936512758203" y="223.859375" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal" transform="matrix(1,0,0,1,0,6.8203)"><tspan dy="3.46875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan></text><text x="166.4669653705954" y="223.859375" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal" transform="matrix(1,0,0,1,0,6.8203)"><tspan dy="3.46875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,186.5176703125C64.36087484811665,186.2567671875,80.95762454434993,188.0900775390625,89.25599939246658,185.4740578125C97.55437424058323,182.8580380859375,114.15112393681652,166.74774110741123,122.44949878493317,165.5895125C130.65767390643984,164.44387333397373,147.0740241494532,178.4692748046875,155.2821992709599,176.25858671875C163.49037439246658,174.0478986328125,179.90672463547995,150.1084075424778,188.11489975698663,147.9040078125C196.41327460510328,145.6753839096653,213.01002430133659,156.2086474609375,221.30839914945324,158.5264921875C229.6067739975699,160.8443369140625,246.20352369380316,177.4587207266052,254.50189854191981,166.446765625C262.7100736634265,155.5545056875427,279.12642390643987,77.7809518678781,287.3345990279465,70.90963203125C295.45257442284327,64.11382120381559,311.6885252126367,104.12816502618473,319.80650060753345,111.77824296874999C328.1048754556501,119.59832264337223,344.7016251518834,127.53725761718749,353,132.79026249999998" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="56.0625" cy="186.5176703125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="89.25599939246658" cy="185.4740578125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="122.44949878493317" cy="165.5895125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="155.2821992709599" cy="176.25858671875" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="188.11489975698663" cy="147.9040078125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="221.30839914945324" cy="158.5264921875" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="254.50189854191981" cy="166.446765625" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="287.3345990279465" cy="70.90963203125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="319.80650060753345" cy="111.77824296874999" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="353" cy="132.79026249999998" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+    </div><!-- /.box-body -->
+    <div class="box-footer no-border">
+      <div class="row">
+        <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+          <div style="display: inline; width: 60px; height: 60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; -webkit-appearance: none; background: none;"></div>
+          <div class="knob-label">Mail-Orders</div>
+        </div><!-- ./col -->
+        <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+          <div style="display: inline; width: 60px; height: 60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; -webkit-appearance: none; background: none;"></div>
+          <div class="knob-label">Online</div>
+        </div><!-- ./col -->
+        <div class="col-xs-4 text-center">
+          <div style="display: inline; width: 60px; height: 60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; -webkit-appearance: none; background: none;"></div>
+          <div class="knob-label">In-Store</div>
+        </div><!-- ./col -->
+      </div><!-- /.row -->
+    </div><!-- /.box-footer -->
+  </div><!-- /.box -->
 
 
     <!-- Custom tabs (Charts with tabs)-->
@@ -108,289 +60,7 @@ $this->title = 'My Yii Application';
       </div>
     </div><!-- /.nav-tabs-custom -->
 
-    <!-- Chat box -->
-    <div class="box box-success">
-      <div class="box-header ui-sortable-handle" style="cursor: move;">
-        <i class="fa fa-comments-o"></i>
-        <h3 class="box-title">Chat</h3>
-        <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
-          <div class="btn-group" data-toggle="btn-toggle">
-            <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
-            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="box-body chat" id="chat-box" style="overflow: hidden; width: auto; height: 250px;">
-        <!-- chat item -->
-        <div class="item">
-          <img src="img/avatar.png" alt="user image" class="online">
-          <p class="message">
-            <a href="#" class="name">
-              <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
-              Mike Doe
-            </a>
-            I would like to meet you to discuss the latest news about
-            the arrival of the new theme. They say it is going to be one the
-            best themes on the market
-          </p>
-          <div class="attachment">
-            <h4>Attachments:</h4>
-            <p class="filename">
-              Theme-thumbnail-image.jpg
-            </p>
-            <div class="pull-right">
-              <button class="btn btn-primary btn-sm btn-flat">Open</button>
-            </div>
-          </div><!-- /.attachment -->
-        </div><!-- /.item -->
-        <!-- chat item -->
-        <div class="item">
-          <img src="img/avatar2.png" alt="user image" class="offline">
-          <p class="message">
-            <a href="#" class="name">
-              <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
-              Jane Doe
-            </a>
-            I would like to meet you to discuss the latest news about
-            the arrival of the new theme. They say it is going to be one the
-            best themes on the market
-          </p>
-        </div><!-- /.item -->
-        <!-- chat item -->
-        <div class="item">
-          <img src="img/avatar3.png" alt="user image" class="offline">
-          <p class="message">
-            <a href="#" class="name">
-              <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
-              Susan Doe
-            </a>
-            I would like to meet you to discuss the latest news about
-            the arrival of the new theme. They say it is going to be one the
-            best themes on the market
-          </p>
-        </div><!-- /.item -->
-      </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 65px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 184.91124260355px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div><!-- /.chat -->
-      <div class="box-footer">
-        <div class="input-group">
-          <input class="form-control" placeholder="Type message...">
-          <div class="input-group-btn">
-            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.box (chat box) -->
-
-    <!-- TO DO List -->
-    <div class="box box-primary">
-      <div class="box-header ui-sortable-handle" style="cursor: move;">
-        <i class="ion ion-clipboard"></i>
-        <h3 class="box-title">To Do List</h3>
-        <div class="box-tools pull-right">
-          <ul class="pagination pagination-sm inline">
-            <li><a href="#">«</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">»</a></li>
-          </ul>
-        </div>
-      </div><!-- /.box-header -->
-      <div class="box-body">
-        <ul class="todo-list ui-sortable">
-          <li>
-            <!-- drag handle -->
-            <span class="handle ui-sortable-handle">
-              <i class="fa fa-ellipsis-v"></i>
-              <i class="fa fa-ellipsis-v"></i>
-            </span>
-            <!-- checkbox -->
-            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" value="" name="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-            <!-- todo text -->
-            <span class="text">Design a nice theme</span>
-            <!-- Emphasis label -->
-            <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-            <!-- General tools such as edit or delete-->
-            <div class="tools">
-              <i class="fa fa-edit"></i>
-              <i class="fa fa-trash-o"></i>
-            </div>
-          </li>
-          <li>
-            <span class="handle ui-sortable-handle">
-              <i class="fa fa-ellipsis-v"></i>
-              <i class="fa fa-ellipsis-v"></i>
-            </span>
-            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" value="" name="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-            <span class="text">Make the theme responsive</span>
-            <small class="label label-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-            <div class="tools">
-              <i class="fa fa-edit"></i>
-              <i class="fa fa-trash-o"></i>
-            </div>
-          </li>
-          <li>
-            <span class="handle ui-sortable-handle">
-              <i class="fa fa-ellipsis-v"></i>
-              <i class="fa fa-ellipsis-v"></i>
-            </span>
-            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" value="" name="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-            <span class="text">Let theme shine like a star</span>
-            <small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-            <div class="tools">
-              <i class="fa fa-edit"></i>
-              <i class="fa fa-trash-o"></i>
-            </div>
-          </li>
-          <li>
-            <span class="handle ui-sortable-handle">
-              <i class="fa fa-ellipsis-v"></i>
-              <i class="fa fa-ellipsis-v"></i>
-            </span>
-            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" value="" name="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-            <span class="text">Let theme shine like a star</span>
-            <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
-            <div class="tools">
-              <i class="fa fa-edit"></i>
-              <i class="fa fa-trash-o"></i>
-            </div>
-          </li>
-          <li>
-            <span class="handle ui-sortable-handle">
-              <i class="fa fa-ellipsis-v"></i>
-              <i class="fa fa-ellipsis-v"></i>
-            </span>
-            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" value="" name="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-            <span class="text">Check your messages and notifications</span>
-            <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
-            <div class="tools">
-              <i class="fa fa-edit"></i>
-              <i class="fa fa-trash-o"></i>
-            </div>
-          </li>
-          <li>
-            <span class="handle ui-sortable-handle">
-              <i class="fa fa-ellipsis-v"></i>
-              <i class="fa fa-ellipsis-v"></i>
-            </span>
-            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" value="" name="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
-            <span class="text">Let theme shine like a star</span>
-            <small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
-            <div class="tools">
-              <i class="fa fa-edit"></i>
-              <i class="fa fa-trash-o"></i>
-            </div>
-          </li>
-        </ul>
-      </div><!-- /.box-body -->
-      <div class="box-footer clearfix no-border">
-        <button class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
-      </div>
-    </div><!-- /.box -->
-
-    <!-- quick email widget -->
-    <div class="box box-info">
-      <div class="box-header ui-sortable-handle" style="cursor: move;">
-        <i class="fa fa-envelope"></i>
-        <h3 class="box-title">Quick Email</h3>
-        <!-- tools box -->
-        <div class="pull-right box-tools">
-          <button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
-        </div><!-- /. tools -->
-      </div>
-      <div class="box-body">
-        <form action="#" method="post">
-          <div class="form-group">
-            <input type="email" class="form-control" name="emailto" placeholder="Email to:">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" placeholder="Subject">
-          </div>
-          <div>
-            <ul class="wysihtml5-toolbar"><li class="dropdown">
-              <a class="btn btn-default dropdown-toggle " data-toggle="dropdown">
-                <span class="glyphicon glyphicon-font"></span>
-                <span class="current-font">Normal text</span>
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="div" tabindex="-1" href="javascript:;" unselectable="on">Normal text</a></li>
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" tabindex="-1" href="javascript:;" unselectable="on">Heading 1</a></li>
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" tabindex="-1" href="javascript:;" unselectable="on">Heading 2</a></li>
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3" tabindex="-1" href="javascript:;" unselectable="on">Heading 3</a></li>
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4" tabindex="-1" href="javascript:;" unselectable="on">Heading 4</a></li>
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5" tabindex="-1" href="javascript:;" unselectable="on">Heading 5</a></li>
-                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6" tabindex="-1" href="javascript:;" unselectable="on">Heading 6</a></li>
-              </ul>
-            </li>
-            <li>
-              <div class="btn-group">
-                <a class="btn  btn-default" data-wysihtml5-command="bold" title="CTRL+B" tabindex="-1" href="javascript:;" unselectable="on">Bold</a>
-                <a class="btn  btn-default" data-wysihtml5-command="italic" title="CTRL+I" tabindex="-1" href="javascript:;" unselectable="on">Italic</a>
-                <a class="btn  btn-default" data-wysihtml5-command="underline" title="CTRL+U" tabindex="-1" href="javascript:;" unselectable="on">Underline</a>
-              </div>
-            </li>
-            <li>
-              <div class="btn-group">
-                <a class="btn  btn-default" data-wysihtml5-command="insertUnorderedList" title="Unordered list" tabindex="-1" href="javascript:;" unselectable="on"><span class="glyphicon glyphicon-list"></span></a>
-                <a class="btn  btn-default" data-wysihtml5-command="insertOrderedList" title="Ordered list" tabindex="-1" href="javascript:;" unselectable="on"><span class="glyphicon glyphicon-th-list"></span></a>
-                <a class="btn  btn-default" data-wysihtml5-command="Outdent" title="Outdent" tabindex="-1" href="javascript:;" unselectable="on"><span class="glyphicon glyphicon-indent-right"></span></a>
-                <a class="btn  btn-default" data-wysihtml5-command="Indent" title="Indent" tabindex="-1" href="javascript:;" unselectable="on"><span class="glyphicon glyphicon-indent-left"></span></a>
-              </div>
-            </li>
-            <li>
-              <div class="bootstrap-wysihtml5-insert-link-modal modal fade">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <a class="close" data-dismiss="modal">×</a>
-                      <h3>Insert link</h3>
-                    </div>
-                    <div class="modal-body">
-                      <input value="http://" class="bootstrap-wysihtml5-insert-link-url form-control">
-                      <label class="checkbox"> <input type="checkbox" class="bootstrap-wysihtml5-insert-link-target" checked="">Open link in new window</label>
-                    </div>
-                    <div class="modal-footer">
-                      <a class="btn btn-default" data-dismiss="modal">Cancel</a>
-                      <a href="#" class="btn btn-primary" data-dismiss="modal">Insert link</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="btn  btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1" href="javascript:;" unselectable="on">
-                <span class="glyphicon glyphicon-share"></span>
-              </a>
-            </li>
-            <li>
-              <div class="bootstrap-wysihtml5-insert-image-modal modal fade">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <a class="close" data-dismiss="modal">×</a>
-                      <h3>Insert image</h3>
-                    </div>
-                    <div class="modal-body">
-                      <input value="http://" class="bootstrap-wysihtml5-insert-image-url form-control">
-                    </div>
-                    <div class="modal-footer">
-                      <a class="btn btn-default" data-dismiss="modal">Cancel</a>
-                      <a class="btn btn-primary" data-dismiss="modal">Insert image</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="btn  btn-default" data-wysihtml5-command="insertImage" title="Insert image" tabindex="-1" href="javascript:;" unselectable="on">
-                <span class="glyphicon glyphicon-picture"></span>
-              </a>
-            </li>
-          </ul><textarea class="textarea" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid rgb(221, 221, 221); padding: 10px; display: none;" placeholder="Message"></textarea><input type="hidden" name="_wysihtml5_mode" value="1"><iframe class="wysihtml5-sandbox" security="restricted" allowtransparency="true" frameborder="0" width="0" height="0" marginwidth="0" marginheight="0" style="border-collapse: separate; border: 1px solid rgb(221, 221, 221); clear: none; display: inline-block; float: none; margin: 0px; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; padding: 10px; position: static; top: auto; left: auto; right: auto; bottom: auto; z-index: auto; vertical-align: baseline; text-align: start; -webkit-box-shadow: none; box-shadow: none; border-radius: 0px; width: 100%; height: 125px; background-color: rgb(255, 255, 255);"></iframe>
-        </div>
-      </form>
-    </div>
-    <div class="box-footer clearfix">
-      <button class="pull-right btn btn-default" id="sendEmail">Send <i class="fa fa-arrow-circle-right"></i></button>
-    </div>
-  </div>
-
+   
 </section><!-- /.Left col -->
 <!-- right col (We are only adding the ID to make the widgets sortable)-->
 <section class="col-lg-5 connectedSortable ui-sortable">
@@ -430,37 +100,6 @@ $this->title = 'My Yii Application';
     </div>
   </div>
   <!-- /.box -->
-
-  <!-- solid sales graph -->
-  <div class="box box-solid bg-teal-gradient">
-    <div class="box-header ui-sortable-handle" style="cursor: move;">
-      <i class="fa fa-th"></i>
-      <h3 class="box-title">Sales Graph</h3>
-      <div class="box-tools pull-right">
-        <button class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
-        <button class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
-      </div>
-    </div>
-    <div class="box-body border-radius-none">
-      <div class="chart" id="line-chart" style="height: 250px;"><svg height="250" version="1.1" width="378" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.65625px; top: -0.59375px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="43.5625" y="211.359375" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.46875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,211.359375H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="164.76953125" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.47265625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,164.76953125H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="118.17968749999999" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.460937499999986" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,118.17968749999999H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="71.58984375" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.46484375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,71.58984375H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="43.5625" y="24.99999999999997" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal"><tspan dy="3.4687499999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20,000</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,24.99999999999997H353" stroke-width="0.4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="298.51936512758203" y="223.859375" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal" transform="matrix(1,0,0,1,0,6.8203)"><tspan dy="3.46875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan></text><text x="166.4669653705954" y="223.859375" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#ffffff" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: 'Open Sans';" font-size="10px" font-family="Open Sans" font-weight="normal" transform="matrix(1,0,0,1,0,6.8203)"><tspan dy="3.46875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><path fill="none" stroke="#efefef" d="M56.0625,186.5176703125C64.36087484811665,186.2567671875,80.95762454434993,188.0900775390625,89.25599939246658,185.4740578125C97.55437424058323,182.8580380859375,114.15112393681652,166.74774110741123,122.44949878493317,165.5895125C130.65767390643984,164.44387333397373,147.0740241494532,178.4692748046875,155.2821992709599,176.25858671875C163.49037439246658,174.0478986328125,179.90672463547995,150.1084075424778,188.11489975698663,147.9040078125C196.41327460510328,145.6753839096653,213.01002430133659,156.2086474609375,221.30839914945324,158.5264921875C229.6067739975699,160.8443369140625,246.20352369380316,177.4587207266052,254.50189854191981,166.446765625C262.7100736634265,155.5545056875427,279.12642390643987,77.7809518678781,287.3345990279465,70.90963203125C295.45257442284327,64.11382120381559,311.6885252126367,104.12816502618473,319.80650060753345,111.77824296874999C328.1048754556501,119.59832264337223,344.7016251518834,127.53725761718749,353,132.79026249999998" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="56.0625" cy="186.5176703125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="89.25599939246658" cy="185.4740578125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="122.44949878493317" cy="165.5895125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="155.2821992709599" cy="176.25858671875" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="188.11489975698663" cy="147.9040078125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="221.30839914945324" cy="158.5264921875" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="254.50189854191981" cy="166.446765625" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="287.3345990279465" cy="70.90963203125" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="319.80650060753345" cy="111.77824296874999" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="353" cy="132.79026249999998" r="4" fill="#efefef" stroke="#efefef" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
-    </div><!-- /.box-body -->
-    <div class="box-footer no-border">
-      <div class="row">
-        <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-          <div style="display: inline; width: 60px; height: 60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; -webkit-appearance: none; background: none;"></div>
-          <div class="knob-label">Mail-Orders</div>
-        </div><!-- ./col -->
-        <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-          <div style="display: inline; width: 60px; height: 60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; -webkit-appearance: none; background: none;"></div>
-          <div class="knob-label">Online</div>
-        </div><!-- ./col -->
-        <div class="col-xs-4 text-center">
-          <div style="display: inline; width: 60px; height: 60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; -webkit-appearance: none; background: none;"></div>
-          <div class="knob-label">In-Store</div>
-        </div><!-- ./col -->
-      </div><!-- /.row -->
-    </div><!-- /.box-footer -->
-  </div><!-- /.box -->
 
   <!-- Calendar -->
   <div class="box box-solid bg-green-gradient">
