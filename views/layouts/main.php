@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $content string */
 \app\assets\AdminLteAsset::register($this);
 \app\assets\AppAsset::register($this);
-if (Yii::$app->controller->action->id === 'login') {
+if (Yii::$app->controller->action->id === 'login' || Yii::$app->controller->action->id === 'register') {
     echo $this->render(
         'wrapper-black',
         ['content' => $content]

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the Dektrium project.
  *
@@ -11,44 +10,48 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\Url;
 
 /**
  * @var yii\web\View              $this
  * @var dektrium\user\models\User $user
  * @var dektrium\user\Module      $module
  */
-
 $this->title = Yii::t('user', 'Sign up');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
+        <div class="form-box" id="login-box">
+            <div class="panel panel-default">
+                <img id="logo" class="img-circle" src="<? echo Url::base();?>/img/avatar.svg" />
+                <h3 style="margin-top: 7px;">Registration</h3>
+                <h4></h4>
+                <div class="panel-body">
+                    <?php
+                    $form = ActiveForm::begin([
+                                'id' => 'registration-form',
+                                'enableAjaxValidation' => true,
+                                'enableClientValidation' => false
+                    ]);
+                    ?>
+
+                    <?= $form->field($model, 'username',['inputOptions'=>['class'=>'form-control input-lg','placeholder'=>'Username']])->label(FALSE) ?>
+
+                    <?= $form->field($model, 'email',['inputOptions'=>['class'=>'form-control input-lg','placeholder'=>'Email']])->label(FALSE) ?>
+
+                    <?php if ($module->enableGeneratingPassword == false): ?>
+                        <?= $form->field($model, 'password',['inputOptions'=>['class'=>'form-control input-lg','placeholder'=>'Password']])->passwordInput()->label(FALSE) ?>
+                    <?php endif ?>
+
+                    <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block btn-lg']) ?>
+
+                    <?php ActiveForm::end(); ?>
+                </div>
             </div>
-            <div class="panel-body">
-                <?php $form = ActiveForm::begin([
-                    'id'                     => 'registration-form',
-                    'enableAjaxValidation'   => true,
-                    'enableClientValidation' => false
-                ]); ?>
-
-                <?= $form->field($model, 'username') ?>
-
-                <?= $form->field($model, 'email') ?>
-
-                <?php if ($module->enableGeneratingPassword == false): ?>
-                    <?= $form->field($model, 'password')->passwordInput() ?>
-                <?php endif ?>
-
-                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
-
-                <?php ActiveForm::end(); ?>
-            </div>
+            <p class="text-center">
+                <?= Html::a(Yii::t('user', 'Already registered? Sign in!'), ['/user/security/login']) ?>
+            </p>
         </div>
-        <p class="text-center">
-            <?= Html::a(Yii::t('user', 'Already registered? Sign in!'), ['/user/security/login']) ?>
-        </p>
     </div>
 </div>

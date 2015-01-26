@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="panel panel-default">
             <img id="logo" class="img-circle" src="<? echo Url::base();?>/img/avatar.svg" />
             <div class="panel-body">
-              <h3>DIMLAB</h3>
+              <h3 style="margin-top: 7px;">DIMLAB</h3>
                 <?php $form = ActiveForm::begin([
                     'id'                     => 'login-form',
                     'enableAjaxValidation'   => true,
@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php //$form->field($model, 'password', ['inputOptions' => ['class' => 'form-control input-lg', 'tabindex' => '2','placeholder'=>'Password']])->passwordInput()->label(Yii::t('user', 'Password') . ' (' . Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request'], ['tabindex' => '5']) . ')') ?>
                 <?= $form->field($model, 'password', ['inputOptions' => ['class' => 'form-control input-lg', 'tabindex' => '2','placeholder'=>'Password']])->passwordInput()->label(FALSE) ?>
 
-                <?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
+                <?php // $form->field($model, 'rememberMe')->checkbox(['tabindex' => '4']) ?>
 
                 <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-success btn-block btn-lg', 'tabindex' => '3']) ?>
 
