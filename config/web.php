@@ -64,8 +64,8 @@ $config = [
             'transport' => [
               'class' => 'Swift_SmtpTransport',
               'host' => 'smtp.mandrillapp.com',
-              'username' => 'dixonsatit@gmail.com',
-              'password' => 'e0WBDbWpBO9oCPNqMqxXIw',
+              'username' => 'user',
+              'password' => 'password',
               'port' => '587',
               'encryption' => 'tls',
             ],
